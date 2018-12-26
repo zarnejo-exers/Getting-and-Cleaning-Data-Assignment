@@ -18,6 +18,7 @@ for(i in dataclass){
   datamatrix = data.frame()
   ##loops through different dataclass and right away merges the data into 1 vector + 1 class(train, test)
   for(j in datatype){
+    print("Reading Data... ")
     directory <- paste0("./UCI HAR Dataset/", i, "/", j, "_", i, ".txt")
     print(directory)
     res <- read.table(directory)
@@ -32,9 +33,11 @@ for(i in dataclass){
       datamatrix <- cbind(datamatrix, res)
     }
   }
+  print("Merging Data... ")
   datacontainer <- rbind(datacontainer, datamatrix)
 }
 
+print("...Processing Data (Cleaning)... ")
 #2. Extracts only the measurements on the mean and standard deviation for each measurement. + y and subject col
 #get column indeces of the data pertaining to mean and standard deviation computation using grep (column-name referenced)
 msd.colindeces <- grep("mean|std", names(datacontainer))
@@ -61,5 +64,8 @@ colnames(datacontainer) <- tolower(names(datacontainer))
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 tidy.data <- datacontainer %>% group_by(subject, activity) %>% summarize_all(funs(mean))
 
+print("...Writing Tidy data to file... ")
 #writing result to file
 write.table(tidy.data, "./tidyDataSubmission.txt", row.name=FALSE)
+
+print("...Closing file")

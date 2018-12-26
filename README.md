@@ -33,7 +33,7 @@ Rscript run_analysis.R
 
 If authorization is requested, re-run using the command
 ```
-Rscript run_analysis.R
+sudo Rscript run_analysis.R
 ```
 then give your password (worry not if no * or signs of you writing get shown, that's just how sudo works)
 

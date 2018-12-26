@@ -37,12 +37,14 @@ Rscript run_analysis.R
 ```
 then give your password (worry not if no * or signs of you writing get shown, that's just how sudo works)
 
-### That's it! Just view the resultant output file and there you have it :) 
+### That's it! 
 
-##Author
+Just view the resultant output file and there you have it :) 
+
+## Author
 * Zenith O. Arnejo
 
-##Acknowledgements
+## Acknowledgements
 * to the author of https://drive.google.com/file/d/0B1r70tGT37UxYzhNQWdXS19CN1U/view
 * to Lord Jesus for the provisions and encouragements! Literrally :) 
 

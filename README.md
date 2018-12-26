@@ -46,7 +46,7 @@ Just view the resultant output file and there you have it :)
 
 ## Acknowledgements
 * to the author of https://drive.google.com/file/d/0B1r70tGT37UxYzhNQWdXS19CN1U/view
-* to Lord Jesus for the provisions and encouragements! Literrally :) 
+* to Lord Jesus for the provisions and encouragements! Literally :) 
 
 
 

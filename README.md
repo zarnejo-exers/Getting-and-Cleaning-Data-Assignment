@@ -9,6 +9,12 @@ These instructions will get you a copy of the project up and running on your loc
 This repository contains:
 * run_analysis.R. 
 	* Main program script - It takes as an input a UCI HAR Dataset. The dataset has to to be improved as it is expected to be in its raw-est form. Primary cleaning is done on the column names to improve readability. Cleaning includes removal of () and changing of '-' to '.'. Further cleaning involves expansion of t to time and f to frequency, as well as changin 'y' to 'activity'. Also, to improve quality of data, the observations are group in terms of subject and activity (subject pertaining to person/individual while activity pertaining to body movement). Finally, as the project requires, only the features with mean and standard deviation derivations were considered. The values for each feature were then averaged in order to provide the final tidy data required. 
+	* It basically does the following: 
+	1. Merges the training and the test sets to create one data set.
+	2. Extracts only the measurements on the mean and standard deviation for each measurement.
+	3. Uses descriptive activity names to name the activities in the data set
+	4. Appropriately labels the data set with descriptive variable names.
+	5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 * CodeBook.md
 	* guide to understand program variables and method
 * README.md

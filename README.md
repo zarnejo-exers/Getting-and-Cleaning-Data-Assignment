@@ -6,6 +6,8 @@ The purpose of this project is to demonstrate student's ability to collect, work
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
+The primary file is named run_analysis.R. It takes as an input a UCI HAR Dataset. The dataset has to to be improved as it is expected to be in its raw-est form. Primary cleaning is done on the column names to improve readability. Cleaning includes removal of () and changing of '-' to '.'. Further cleaning involves expansion of t to time and f to frequency, as well as changin 'y' to 'activity'. Also, to improve quality of data, the observations are group in terms of subject and activity (subject pertaining to person/individual while activity pertaining to body movement). Finally, as the project requires, only the features with mean and standard deviation derivations were considered. The values for each feature were then averaged in order to provide the final tidy data required. 
+
 ### Prerequisites
 
 Must install on your workstation:

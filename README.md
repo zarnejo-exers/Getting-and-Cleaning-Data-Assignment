@@ -40,6 +40,7 @@ then give your password (worry not if no * or signs of you writing get shown, th
 ### That's it! 
 
 Just view the resultant output file and there you have it :) 
+The result is a tidy dataset version of the raw data after it is submitted to the merging, cleaning, and transforming work specified in the run_analysis.R
 
 ## Author
 * Zenith O. Arnejo

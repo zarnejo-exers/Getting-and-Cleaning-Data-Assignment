@@ -77,5 +77,6 @@ The dataset was reduced to only 79 feature variables + 1 activity label + 1 subj
 	* expand all starting t to time
 	* expand all startin f to freq (to identify frequency)
 	* change column with "y" header to "activity"
+	* no further changes were done on the column name to respect actual data source
 * To ensure one observation per row and one variable per column
 	* performed group_by on subject first then activity
